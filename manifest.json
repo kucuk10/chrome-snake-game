@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Modern Snake Deluxe Extension",
+  "version": "1.0",
+  "description": "Advanced Snake game with power-ups in a popup!",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_title": "Play Modern Snake!",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png"
+    }
+  }
+}

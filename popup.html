@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Snake Deluxe</title>
+    <!-- Link the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- This is the main content from your original HTML body -->
+    <div id="game-container">
+        <div class="ui-panel">
+            <div class="score"><span class="score-label">Score:</span><span id="current-score">0</span></div>
+            <div class="high-score"><span class="high-score-label">High:</span><span id="high-score">0</span></div>
+        </div>
+        <canvas id="gameCanvas" width="600" height="400"></canvas> <!-- Adjusted size -->
+
+        <!-- Status Indicator for Powerups -->
+        <div id="status-indicator"></div>
+
+        <!-- Overlays -->
+        <div id="start-overlay" class="overlay visible">
+            <h2>Modern Snake Deluxe</h2>
+            <p>Use Arrow Keys or WASD to move.<br>Eat the food, avoid walls and obstacles!</p>
+            <p style="margin-top:20px; font-size: 0.9em;">
+                🍎 = +10 pts, Grow<br>
+                🌟 = +50 pts, Grow, Speed Up!<br>
+                👻 = +20 pts, Ghost Mode (Phase through walls/self!)<br>
+                ❄️ = +5 pts, Slow Down! <br>
+                <span style="color: #cc66ff;">■</span> = Obstacle (Avoid!)
+            </p>
+            <button id="startButton">Start Game</button>
+            <p style="font-size: 0.7em; margin-top: 15px;">Press 'P' to Pause</p>
+        </div>
+
+        <div id="pause-overlay" class="overlay">
+            <h2>Paused</h2>
+            <p>Press 'P' to Resume</p>
+        </div>
+
+        <div id="gameover-overlay" class="overlay">
+            <h2>Game Over!</h2>
+            <p class="final-score">Final Score: <span id="final-score">0</span></p>
+            <p>Press Enter or Click Restart</p>
+            <button id="restartButton">Restart Game</button>
+        </div>
+
+    </div>
+    <div id="instructions">Use Arrow Keys / WASD to move. Enter/Space to Start/Restart. P to Pause.</div>
+
+    <!-- Link the external JavaScript file at the end of the body -->
+    <script src="game.js"></script>
+</body>
+</html>
